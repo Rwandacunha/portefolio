@@ -1,15 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    /* ================================================================
-       CONFIGURATION DE L'INTELLIGENCE ARTIFICIELLE
-       ================================================================
-       1. Va sur : https://aistudio.google.com/app/apikey
-       2. Crée une clé gratuite ("Create API Key")
-       3. Colle-la entre les guillemets ci-dessous.
-       
-       Si tu laisses vide, l'IA répondra uniquement aux questions sur le Portfolio.
-    */
-    const GEMINI_API_KEY = ""; // <-- COLLE TA CLÉ ICI (Ex: "AlzaSyB...")
-    
+
 
 
     // --- ELEMENTS DU DOM ---
@@ -199,3 +188,4 @@ document.addEventListener('DOMContentLoaded', () => {
         el.addEventListener('mouseleave', () => curseur?.classList.remove('active'));
     });
 });
+
