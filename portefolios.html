@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio SISR | Rwan Da Cunha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <div class="curseur-personnalise"></div>
+    <div class="blob"></div>
+    
+
+    <nav>
+        <div class="logo">Mon<span>Portfolio</span></div>
+        <ul>
+            <li><a href="#identite">Bio</a></li>
+            <li><a href="#competences">Stack</a></li>
+            <li><a href="#projets">Work</a></li>
+            <li><a href="#ia">IA</a></li> <li><a href="#contact">Contact</a></li>
+            
+            <li class="color-control">
+                <span class="icon-palette">🎨</span>
+                <input type="range" id="hue-slider" min="0" max="360" value="190">
+            </li>
+
+            <li><button id="mode-switch">🌓</button></li>
+        </ul>
+    </nav>
+
+    <header id="identite" class="reveal">
+        <div class="presentation">
+            <span class="code-comment">// status: recherche_alternance_sept_2026</span>
+            <h1>Rwan <span>Da Cunha</span></h1>
+            
+            <p class="tagline">
+                <span class="prompt-user">root@rwan:~#</span> 
+                <span id="typewriter"></span><span class="cursor">|</span>
+            </p>
+            
+            <div class="bio-container">
+                <p class="bio">
+                    Propulsé par un <strong>Bac STI2D SIN</strong> où j'ai dompté mes premiers systèmes communicants, 
+                    je me spécialise aujourd'hui en <strong>BTS SIO SISR</strong>. Mon objectif ? Allier ma culture numérique 
+                    à une expertise pointue en administration système et en cybersécurité.
+                </p>
+            </div>
+
+            <div class="frise-parcours">
+                <a href="https://albanais.ent.auvergnerhonealpes.fr/" target="_blank" class="etape">
+                    <div class="date">2022-2025</div>
+                    <div class="description">
+                        <h4>Bac STI2D - Spécialité SIN</h4>
+                        <p>Lycée de l'Albanais (Rumilly)</p>
+                        <span class="clic-info">Visiter le site →</span>
+                    </div>
+                </a>
+                <a href="https://www.st-michel.fr/formations/etablissement-superieur" target="_blank" class="etape">
+                    <div class="date">2025-2027</div>
+                    <div class="description">
+                        <h4>BTS SIO - 1ère année SISR</h4>
+                        <p>Lycée Saint Michel (Annecy)</p>
+                        <span class="clic-info">Visiter le site →</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="actions-principales">
+                <a href="CV_2026-01-22_Rwan_Da_cunha.pdf" target="_blank" class="btn-neon">CONSULTER MON CV</a>
+                <a href="#projets" class="btn-verre">MES RÉALISATIONS</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="competences" class="reveal">
+        <h2 class="titre-section">Compétences Techniques</h2>
+        <div class="carousel-container">
+            <button class="carousel-btn prev" id="prevBtn">❮</button>
+            <div class="carousel-track" id="carouselTrack">
+                
+                <div class="carte-verre carousel-item">
+                    <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?q=80&w=600&auto=format&fit=crop" alt="Systèmes">
+                    <h3>🖥 Systèmes & OS</h3>
+                    <div class="tags"><span>Windows Server</span><span>Debian 11/12</span><span>Active Directory</span></div>
+                </div>
+
+                <div class="carte-verre carousel-item">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=600&auto=format&fit=crop" alt="Réseau">
+                    <h3>🔌 Réseaux & Matériel</h3>
+                    <div class="tags"><span>Cisco IOS</span><span>VLAN/Routage</span><span>VPN/Firewall</span></div>
+                </div>
+
+                <div class="carte-verre carousel-item">
+                    <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=600&auto=format&fit=crop" alt="Code">
+                    <h3>🛠 Outils & Dev</h3>
+                    <div class="tags"><span>Python</span><span>Bash</span><span>SQL</span><span>Git</span></div>
+                </div>
+
+                <div class="carte-verre carousel-item">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600&auto=format&fit=crop" alt="Langues">
+                    <h3>🌐 Langues</h3>
+                    <div class="tags"><span>Français</span><span>Anglais (B1)</span><span>Espagnol (B1)</span></div>
+                </div>
+
+            </div>
+            <button class="carousel-btn next" id="nextBtn">❯</button>
+        </div>
+    </section>
+
+    <section id="projets" class="reveal">
+        <h2 class="titre-section">Mes Réalisations</h2>
+        <div class="grille-projets">
+            <div class="carte-verre projet">
+                <span class="categorie">Infrastructure Linux</span>
+                <h4>Perceptron & Hébergement Debian</h4>
+                <p>Développement d'un site sur l'IA hébergé sur un serveur <strong>Debian 11</strong> configuré entièrement.</p>
+                <a href="#" target="_blank" class="lien-projet">Accéder au serveur →</a>
+            </div>
+            <div class="carte-verre projet">
+                <span class="categorie">IoT / Terminale SIN</span>
+                <h4>Ventilation Connectée</h4>
+                <p>Système de régulation thermique piloté par microcontrôleur et interface réseau Wi-Fi.</p>
+                <a href="#" target="_blank" class="lien-projet">Détails techniques →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="ia" class="reveal">
+        <h2 class="titre-section">Mon Assistant IA</h2>
+        <div class="carte-verre chat-container">
+            <div class="chat-header">
+                <div class="chat-avatar">🤖</div>
+                <div>
+                    <h3>RwanBot v1.0</h3>
+                    <p style="font-size: 0.8rem; color: var(--texte-attentu);">Posez-moi une question sur Rwan</p>
+                </div>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    Bonjour ! Je suis l'IA de Rwan. Demandez-moi ses <strong>compétences</strong>, son <strong>contact</strong>, ou son <strong>CV</strong> !
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Écrivez votre message..." autocomplete="off">
+                <button id="send-btn">Envoyer</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="veille" class="reveal">
+        <h2 class="titre-section">Veille Technologique</h2>
+        <div class="carte-verre">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h3>Mes Sources Préférées</h3>
+                <p style="color: var(--texte-attentu); margin-top: 10px;">
+                    <a href="https://cyber.gouv.fr/" target="_blank" class="lien-source">ANSSI</a> | 
+                    <a href="https://www.it-connect.fr/" target="_blank" class="lien-source">IT-Connect</a> | 
+                    <a href="https://www.zataz.com/" target="_blank" class="lien-source">ZATAZ</a>
+                </p>
+            </div>
+            <div class="table-scroll">
+                <table class="table-veille">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Sujet</th>
+                            <th>Résumé</th>
+                            <th>Lien</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>21/01/2026</td>
+                            <td>Faille Cisco</td>
+                            <td>CVE-2026-20045 : RCE critique sur Cisco Unified.</td>
+                            <td><a href="https://cyber.gouv.fr" target="_blank" class="btn-mini">Lire</a></td>
+                        </tr>
+                        <tr>
+                            <td>13/01/2026</td>
+                            <td>Patch Tuesday</td>
+                            <td>Correction de failles Zero-day sur Windows.</td>
+                            <td><a href="https://it-connect.fr" target="_blank" class="btn-mini">Lire</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <h2 class="titre-section">Contact</h2>
+        <div class="grille-contact">
+            <div class="carte-verre contact-item">
+                <div class="icone">📧</div>
+                <h3>Email</h3>
+                <p><a href="mailto:rwan.dacunha74@gmail.com" class="lien-direct">rwan.dacunha74@gmail.com</a></p>
+            </div>
+            <div class="carte-verre contact-item">
+                <div class="icone">🔗</div>
+                <h3>LinkedIn</h3>
+                <p><a href="https://linkedin.com/in/rwan-da-cunha-b559bb3a7/" target="_blank" class="lien-direct">rwan da cunha</a></p>
+            </div>
+            <div class="carte-verre contact-item">
+                <div class="icone">📱</div>
+                <h3>Téléphone</h3>
+                <p><a href="tel:+33659193929" class="lien-direct">+33 6 59 19 39 29</a></p>
+            </div>
+            <div class="carte-verre contact-item">
+                <div class="icone">📍</div>
+                <h3>Localisation</h3>
+                <p>Annecy, France</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Rwan Da Cunha — BTS SIO SISR</p>
+    </footer>
+
+    <script src="java pro.js"></script>
+</body>
+</html>
