@@ -106,11 +106,10 @@ document.addEventListener('DOMContentLoaded', () => {
             chatMessages.scrollTop = chatMessages.scrollHeight;
 
             try {
-                // Configuration du Prompt Système (Donne la personnalité à l'IA)
-                const systemPrompt = `Tu es l'assistant IA du portfolio de Rwan Da Cunha, étudiant en BTS SIO SISR. 
-                Tu es expert en informatique, réseaux (Cisco, VLAN), système (Windows Server, Linux Debian) et cybersécurité.
-                Tu dois répondre de manière concise, pro et un peu "geek". 
-                Si on te pose une question hors sujet, réponds quand même avec humour ou expertise.
+                // Nouveau Prompt Système (Plus intelligent)
+                const systemPrompt = `Tu es l'assistant IA du portfolio de Rwan Da Cunha, étudiant en BTS SIO option SISR (Systèmes, Réseaux et Cybersécurité). 
+                Rwan maîtrise l'administration système (Debian, Windows Server), le réseau (adressage IP, VLAN, routage avec Cisco) et le développement (Python, SQL, HTML/CSS). Il a notamment déployé le site web de l'entreprise PUCCIO Électricité.
+                Ton rôle est de répondre aux visiteurs du site de manière professionnelle, concise et légèrement technophile. Si on te demande de recommander Rwan, fais-le avec enthousiasme.
                 Question de l'utilisateur : ${userText}`;
 
                 const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
