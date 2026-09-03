@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- ELEMENTS DU DOM ---
     const curseur = document.querySelector('.curseur-personnalise');
-    const blob = document.querySelector('.blob');
+    const blob = document.querySelector('.blob'); 
     const boutonMode = document.getElementById('mode-switch');
     const hueSlider = document.getElementById('hue-slider');
 
