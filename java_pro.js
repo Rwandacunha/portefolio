@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const GEMINI_API_KEY = ""; // <-- COLLE TA CLÉ ICI (Ex: "AlzaSyB...")
     
 
-
     // --- ELEMENTS DU DOM ---
     const curseur = document.querySelector('.curseur-personnalise');
     const blob = document.querySelector('.blob');
@@ -147,7 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Réponses locales intelligentes
             if (lowerText.includes('bonjour') || lowerText.includes('salut')) reply = "Salut ! Je suis RwanBot. Pose-moi une question sur mes compétences ou mes projets.";
-            else if (lowerText.includes('compétence') || lowerText.includes('stack')) reply = "Je maîtrise :<br>- <strong>Système :</strong> Windows Server, Debian, AD<br>- <strong>Réseau :</strong> Cisco, VLAN, VPN<br>- <strong>Dev :</strong> Python, Bash, SQL";
+            else if (lowerText.includes('compétence') || lowerText.includes('stack')) reply = "Je maîtrise :<br>- <strong>Système :</strong> Windows Server, Debian, AD<br>- <strong>Réseau :</strong> Cisco, VLAN, VPN<br>- <strong>Dev :</strong> Python, Bash, SQL, HTML/CSS";
+            else if (lowerText.includes('stage') || lowerText.includes('puccio')) reply = "J'ai effectué un stage chez PUCCIO Électricité (Annecy). J'ai créé de A à Z leur site web vitrine en HTML/CSS, avec une approche Responsive Design. Tu peux voir le projet dans la section 'Mes Réalisations' !";
             else if (lowerText.includes('contact') || lowerText.includes('mail')) reply = "Tu peux joindre Rwan ici : <strong>rwan.dacunha74@gmail.com</strong>";
             else if (lowerText.includes('cv')) reply = "Le CV est téléchargeable via le bouton 'Consulter mon CV' en haut.";
             else if (lowerText.includes('blague')) reply = "Que fait un geek quand il a froid ? <br> Il se met près du Windows car la fenêtre est fermée ! (Active l'API pour de meilleures blagues...)";
