@@ -135,4 +135,4 @@ footer { text-align: center; padding: 60px; border-top: 1px solid var(--bordure)
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--fond); }
 ::-webkit-scrollbar-thumb { background: var(--neon); border-radius: 5px; }
-::-webkit-scrollbar-thumb:hover { background: var(--violet); }
+::-webkit-scrollbar-thumb:hover { background: var(--violet); } 
